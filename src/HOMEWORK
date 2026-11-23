@@ -1,0 +1,56 @@
+public class Homework {
+   public static void main(String[] args) {
+       // A) Operation Complexity Analysis
+       System.out.println("A) Operation Complexity Analysis");
+       System.out.println("Operation             Singly LL   Doubly LL   Stack   Queue");
+       System.out.println("Insert beginning      O(1)        O(1)        O(1)    O(1)");
+       System.out.println("Insert end            O(n)        O(1)        O(1)    O(1)");
+       System.out.println("Delete beginning      O(1)        O(1)        O(1)    O(1)");
+       System.out.println("Delete end            O(n)        O(1)        O(n)    O(n)");
+       System.out.println("Access middle         O(n)        O(n)        O(n)    O(n)");
+       System.out.println("Search                 O(n)        O(n)        O(n)    O(n)");
+       System.out.println("Peek                   O(1)        O(1)        O(1)    O(1)");
+       // B) Scenarios
+       System.out.println("\nB) Scenarios");
+       System.out.println("\nScenario 1:");
+       System.out.println("Data structure: Singly Linked List");
+       System.out.println("Insertion: O(1)");
+       System.out.println("Deletion: O(1)");
+       System.out.println("Both operations are fast because we update the head pointer.");
+       System.out.println("\nScenario 2:");
+       System.out.println("Data structure: Doubly Linked List");
+       System.out.println("It allows moving forward and backward.");
+       System.out.println("Doubly Linked List deletion: O(1)");
+       System.out.println("Singly Linked List deletion: O(n)");
+       System.out.println("\nScenario 3:");
+       System.out.println("Data structure: Queue");
+       System.out.println("Insertion: O(1)");
+       System.out.println("Deletion: O(1)");
+       System.out.println("Queue follows FIFO.");
+       System.out.println("Stack is not suitable because it follows LIFO.");
+       // C) Analyze the Sequence
+       System.out.println("\nC) Analyze the Sequence");
+       System.out.println("Initial: 10 -> 20 -> 30 -> 40 -> 50");
+       System.out.println("After insert 5: 5 -> 10 -> 20 -> 30 -> 40 -> 50");
+       System.out.println("After insert 60: 5 -> 10 -> 20 -> 30 -> 40 -> 50 -> 60");
+       System.out.println("After delete 30: 5 -> 10 -> 20 -> 40 -> 50 -> 60");
+       System.out.println("Search 40: Found");
+       System.out.println("After delete last: 5 -> 10 -> 20 -> 40 -> 50");
+       System.out.println("Middle element: 20");
+       System.out.println("\na) Time Complexity");
+       System.out.println("Insert beginning: O(1)");
+       System.out.println("Insert end: O(n)");
+       System.out.println("Delete 30: O(n)");
+       System.out.println("Search 40: O(n)");
+       System.out.println("Delete last: O(n)");
+       System.out.println("Access middle: O(n)");
+       System.out.println("\nb) Operations requiring traversal:");
+       System.out.println("Insert end, delete specific node, search,");
+       System.out.println("delete last and access middle.");
+       System.out.println("\nc) Deleting the last node:");
+       System.out.println("The complexity changes from O(n) to O(1)");
+       System.out.println("because of head and tail references.");
+       System.out.println("\nd) With 10000 elements:");
+       System.out.println("O(n) operations become more expensive.");
+   }
+}
